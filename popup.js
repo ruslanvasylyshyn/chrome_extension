@@ -32,7 +32,7 @@ function btnClicked() {
       let userName = userIds[0].innerText;
 
       if (placeholderChecked.length === 0) {
-        el.insertAdjacentHTML('beforebegin', `<div style="color:red; margin-top:30px; margin-left:30px">Post from <a href='${userUrl}' target="_blank" style="color:#2fa8f6">${userName}</a> hidden - See post`)
+        el.insertAdjacentHTML('beforebegin', `<div style="color:red; margin-top:30px; margin-left:30px">Post from <a href='${userUrl}' target="_blank" style="color:#2fa8f6">${userName}</a> hidden - <a href='https://www.etoro.com/posts/${postId}' target="_blank" class="seePost" id='${postId}' style="color:#2fa8f6">See post</a></div>`)
       }
     })
     }
