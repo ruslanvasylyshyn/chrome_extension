@@ -1,0 +1,26 @@
+.buttonDeleteUrls {
+  height: 35px;
+  width: 35px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #f14040;
+  transition: border-radius 0.5s, background-color 0.5s;
+}
+
+.buttonDeleteUrls:hover {
+  background-color: #dee044;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.buttonDeleteUrls:active {
+  border-radius: 50%;
+  background-color: #089708;
+}
+
+.buttonDeleteUrls.current {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}
