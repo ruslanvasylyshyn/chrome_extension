@@ -1,3 +1,5 @@
+/* css styles for extension button */
+
 .buttonDeleteUrls {
   height: 35px;
   width: 35px;
@@ -24,3 +26,4 @@
   box-shadow: 0 0 0 2px white,
               0 0 0 4px black;
 }
+/* css styles for extension button */

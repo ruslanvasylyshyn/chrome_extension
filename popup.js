@@ -2,6 +2,7 @@
 
 let deleteUrl = document.getElementById("deleteUrl");
 
+// add event listener for extension button 
 deleteUrl.addEventListener("click", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
@@ -10,12 +11,15 @@ deleteUrl.addEventListener("click", async () => {
     function: btnClicked,
   });
 });
+// add event listener for extension button 
 
+// add function for event listener
 function btnClicked() {
   let postIds = document.getElementsByClassName('feed-posts');
 
   for (let i = 0; i < postIds.length; i++) {
 
+// checking posts for url quantity
     let postId = postIds[i].id;
     let urlQuantity = document.getElementById(postId).querySelectorAll('span>a.et-link');
 
@@ -23,9 +27,9 @@ function btnClicked() {
     document.getElementById(postId).querySelectorAll("div.post-item-content").forEach(el => {
       el.style.opacity = '0',
       el.style.height = '30px'
+// checking posts for url quantity
 
-// placeholder elements
-
+// adding placeholder elements with link to original post
       let placeholderChecked = document.getElementById(postId).getElementsByClassName('seePost');
       let userIds = document.getElementById(postId).getElementsByClassName('post-user-name');
       let userUrl = userIds[0].href;
@@ -34,6 +38,7 @@ function btnClicked() {
       if (placeholderChecked.length === 0) {
         el.insertAdjacentHTML('beforebegin', `<div style="color:red; margin-top:30px; margin-left:30px">Post from <a href='${userUrl}' target="_blank" style="color:#2fa8f6">${userName}</a> hidden - <a href='https://www.etoro.com/posts/${postId}' target="_blank" class="seePost" id='${postId}' style="color:#2fa8f6">See post</a></div>`)
       }
+// adding placeholder elements with link to original post
     })
     }
   }

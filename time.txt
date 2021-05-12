@@ -1,0 +1,3 @@
+2021-05-06 13:00 to 2021-05-06 21:30 Learning Chrome Developer and other documentation and materials, how create Chrome extensions.
+2021-05-07 11:00 to 2021-05-07 19:10 Created Google Chrome extension configuration file and add functionality to extension that help hide all post from Etoro feed.
+2021-05-08 11:00 to 2021-05-08 19:10 Added functionality that hide more than 5 "tagged assets" with placeholder that opens the original posts.
